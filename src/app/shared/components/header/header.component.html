@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="row between-xs container">
+    <nav>
+      <a mat-button routerLink="/home" routerLinkActive="active">Market Place</a>
+      <a mat-button routerLink="/products" routerLinkActive="active">Ofertas</a>
+      <a mat-button routerLink="/contact" routerLinkActive="active">Foro</a>
+      <a mat-button routerLink="/contact" routerLinkActive="active">Vendedores</a>
+      <a mat-button routerLink="/contact" routerLinkActive="active">Vender</a>
+    </nav>
+    <a mat-raised-button routerLink="/auth">
+      <mat-icon>account_circle</mat-icon>
+      Iniciar sesion
+    </a>
+    <a mat-raised-button routerLink="/auth/register" color="accent">
+      <mat-icon>account_circle</mat-icon>
+      Crear cuenta
+    </a>
+    <a mat-raised-button [matBadge]="total$ | async" matBadgeColor="warn">
+      <mat-icon>shopping_cart</mat-icon>
+      Carrito
+    </a>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- <nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <a routerLink="/products" routerLinkActive="active">Product</a>
+  <a routerLink="/contact" routerLinkActive="active">Contact</a>
+</nav> -->

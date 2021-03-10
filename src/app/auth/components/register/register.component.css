@@ -1,0 +1,38 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  background-image: url("../../../../assets/images/campo.jpg");
+  background-size: cover;
+}
+
+.main-container__form-container {
+  width: 50rem;
+  height: 55rem;
+  border-radius: 2rem;
+  background-color: #ffffff80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5rem;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 9px 13px 20px -14px rgba(0, 0, 0, 0.75); */
+
+  
+}
+
+.form-header > h1{
+  font-size: 4rem;
+}
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  
+}
