@@ -1,29 +1,77 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row class="row between-xs container">
-    <nav>
-      <a mat-button routerLink="/home" routerLinkActive="active">Market Place</a>
-      <a mat-button routerLink="/products" routerLinkActive="active">Ofertas</a>
-      <a mat-button routerLink="/contact" routerLinkActive="active">Foro</a>
-      <a mat-button routerLink="/contact" routerLinkActive="active">Vendedores</a>
-      <a mat-button routerLink="/contact" routerLinkActive="active">Vender</a>
-    </nav>
-    <a mat-raised-button routerLink="/auth">
-      <mat-icon>account_circle</mat-icon>
-      Iniciar sesion
+<nav class="navbar navbar-expand-lg navbar-light bg-light navprincipal">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img
+        src="../../../../assets/images/bt.png"
+        alt=""
+        width="30"
+        height="24"
+      />
     </a>
-    <a mat-raised-button routerLink="/auth/register" color="accent">
-      <mat-icon>account_circle</mat-icon>
-      Crear cuenta
-    </a>
-    <a mat-raised-button [matBadge]="total$ | async" matBadgeColor="warn">
-      <mat-icon>shopping_cart</mat-icon>
-      Carrito
-    </a>
-  </mat-toolbar-row>
-</mat-toolbar>
 
-<!-- <nav>
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/products" routerLinkActive="active">Product</a>
-  <a routerLink="/contact" routerLinkActive="active">Contact</a>
-</nav> -->
+    <div class="nocollapse-menu">
+      <form class="d-flex input-header">
+        <input
+          class="form-control me-2 buscar-principal"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuprincipal">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink="/home"
+              routerLinkActive="active"
+              >Market Place</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products" routerLinkActive="active"
+              >Ofertas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products" routerLinkActive="active"
+              >Foro</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products" routerLinkActive="active"
+              >Vendedores</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products" routerLinkActive="active"
+              >Vender</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="righ-header">
+      <h2>Market Place</h2>
+      <div>
+        <i class="bi bi-person-circle"></i>
+        <span>Nombre Usuario</span>
+        <span> Mis compras</span>
+        <i class="bi bi-cart-fill"></i>
+      </div>
+    </div>
+  </div>
+</nav>

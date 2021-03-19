@@ -1,15 +1,38 @@
-<div *ngIf="product">
-  <div>
-    <img [src]="product.image" alt="" />
+<div class="contanier">
+  <div class="descrition">
+    <div class="descrition-header">
+      <h2>FRESAS</h2>
+      <p>
+        Disfruta de un alimento super saludable trabajado Por las mejores manos
+        del mercado
+      </p>
+    </div>
+    <div class="descrition-content">
+      <span>$15.000</span>
+      <p>
+        Vendido por
+        <span style="color: #36ff94; margin-left: 1rem"> Jairo Quintero</span>
+      </p>
+      <p class="product-descripton">
+        Disfruta de un alimento super saludable trabajado Por las mejores manos
+        del mercado
+      </p>
+      <p>Cantidad:<span>100</span></p>
+      <div class="rating">
+        <span class="material-icons"> star_rate </span>
+        <span>5.0</span>
+      </div>
+      <button mat-raised-button class="button-buy">Comprar</button>
+      <button mat-raised-button class="button-add">Agregar al carrito</button>
+    </div>
+
+    <div class="descrition-actions"></div>
   </div>
-  <div>
-    <ul>
-      <li>Nombre: {{ product.title | uppercase }}</li>
-      <li>Precio: {{ product.price | currency }}</li>
-    </ul>
-    <p>{{ product.description }}</p>
-    <button (click)="createProduct()">Crear</button>
-    <button (click)="updateProduct()">Editar</button>
-    <button (click)="deleteProduct()">Delete</button>
+  <div class="gallery">
+    <img
+      src="https://www.ecured.cu/images/0/0e/Futass1.jpeg"
+      alt=""
+      class="img-principal"
+    />
   </div>
 </div>
