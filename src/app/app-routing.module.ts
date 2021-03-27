@@ -1,6 +1,4 @@
-// Prueba de commit
-
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 import { DemoComponent } from './demo/demo.component';
