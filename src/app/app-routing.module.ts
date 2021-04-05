@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
-import { DemoComponent } from './demo/demo.component';
-
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
@@ -14,10 +12,6 @@ const routes: Routes = [
         path: '',
         redirectTo: '/home',
         pathMatch: 'full',
-      },
-      {
-        path: 'demo',
-        component: DemoComponent,
       },
       {
         path: 'home',
